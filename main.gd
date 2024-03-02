@@ -16,7 +16,7 @@ func _process(delta):
 		pos_list.pop_front()
 	_t += delta
 	$Icon.rotation += delta
-	$Icon.position.y += sin(_t)+cos(_t)
+	$Icon.position.y += sin(_t)
 	$Icon.position.x += cos(_t)
 	if _t > pos_list.size()/10.0:
 		pos_list.append($Icon.position)
