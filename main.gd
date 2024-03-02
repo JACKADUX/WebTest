@@ -1,5 +1,7 @@
 extends Control
 
+# https://vercel.com/jackaduxs-projects/web-test
+
 @onready var node_2d = $Node2D
 
 var _t:float = 0
@@ -10,7 +12,6 @@ func _ready():
 	start_p = $Icon.position
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if pos_list.size()>300:
 		pos_list.pop_front()
